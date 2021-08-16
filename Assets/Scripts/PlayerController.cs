@@ -68,23 +68,26 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-            Vector2 movementInput = playerControls.Player.Move.ReadValue<Vector2>();
+        if (Input.GetKey("escape")) {
+            Application.Quit();
+        }
+        Vector2 movementInput = playerControls.Player.Move.ReadValue<Vector2>();
 
-            horizontal = movementInput.x;
-            vertical = movementInput.y;
+        horizontal = movementInput.x;
+        vertical = movementInput.y;
 
-            if (horizontal < 0) {
-                transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
-            } else if (horizontal > 0) {
-                transform.localScale = new Vector3(-0.25f, 0.25f, 0.25f);
+        if (horizontal < 0) {
+            transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+        } else if (horizontal > 0) {
+            transform.localScale = new Vector3(-0.25f, 0.25f, 0.25f);
+        }
+
+        if (isInvincible) {
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0) {
+                isInvincible = false;
             }
-
-            if (isInvincible) {
-                invincibleTimer -= Time.deltaTime;
-                if (invincibleTimer < 0) {
-                    isInvincible = false;
-                }
-            }
+        }
     }
 
     void FixedUpdate() {
