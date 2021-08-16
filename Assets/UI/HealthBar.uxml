@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-direction: row; justify-content: space-between; width: 175px; height: 40px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+        <ui:VisualElement name="Heart" style="width: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: url(&apos;/Assets/Environment/Heart.png&apos;); -unity-background-image-tint-color: rgb(255, 0, 0); height: 100%;" />
+        <ui:VisualElement name="Heart" style="width: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: url(&apos;/Assets/Environment/Heart.png&apos;); -unity-background-image-tint-color: rgb(255, 0, 0); height: 100%;" />
+        <ui:VisualElement name="Heart" style="width: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: url(&apos;/Assets/Environment/Heart.png&apos;); -unity-background-image-tint-color: rgb(255, 0, 0); height: 100%;" />
+        <ui:VisualElement name="Heart" style="width: 100%; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; background-image: url(&apos;/Assets/Environment/Heart.png&apos;); -unity-background-image-tint-color: rgb(255, 0, 0); height: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>
