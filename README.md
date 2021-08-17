@@ -4,6 +4,8 @@ This is a small 2D game intended as a starter project. It is compatible with bot
 
 Feel free to modify scripts etc. for use in your own projects.
 
+I plan on transitioning to URP soon and adding lighting + twin-stick controls.
+
 ## Features
 
 - Full keyboard and touch controls for movement and aiming, using input system 1.1.0-preview.3
